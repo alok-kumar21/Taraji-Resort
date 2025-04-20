@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
+
 const Header = () => (
-  <header className=" bg-dark text-light py-4">
+  <header className="bg-dark text-light py-4">
     <nav className="container">
       <div>
-        <h1>My Food Delivery Website</h1>
+        <h1>My Vacation Stays Website</h1>
       </div>
       <ul className="nav">
         <li className="nav-item">
@@ -12,13 +13,13 @@ const Header = () => (
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/about">
-            About
+          <NavLink className="nav-link" to="/stays">
+            Stays
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/restaurants">
-            Restaurants
+          <NavLink className="nav-link" to="/about">
+            About
           </NavLink>
         </li>
       </ul>

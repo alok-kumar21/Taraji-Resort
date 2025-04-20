@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
 import About from './pages/About';
-import Restaurants from './pages/Restaurants';
-import RestaurantsDetails from './pages/RestaurantsDetails';
+import Stays from './pages/Stay';
+import StayDetails from './pages/StayDetails';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -20,12 +20,12 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: '/restaurants',
-    element: <Restaurants />,
+    path: '/stays',
+    element: <Stays />,
   },
   {
-    path: 'restaurants/:restaurantsId',
-    element: <RestaurantsDetails />,
+    path: 'stays/:stayId',
+    element: <StayDetails />,
   },
 ]);
 
